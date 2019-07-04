@@ -51,3 +51,11 @@ body {
 .container{
     padding-top: 16px;
 }
+
+#pug-image{
+    border-style: solid;
+    border-width: 16px;
+    border-color: pink;
+    width: 200px;
+    height: 200px;
+}

@@ -99,3 +99,43 @@ function five_images(){
     html +='<a data-flickr-embed="true"  href="https://www.flickr.com/photos/zeeyolqpictures/25691458063/in/photolist-cMZANo-gD33Sv-anBCLz-fnKx4j-cMYEdj-b4pZU8-o7U7YL-23MhF8C-98TyA3-4kidYr-F9grpv-ktZqiM-ZsMGDD-dbzGv1-pLoh5n-evRsbp-fmXs9R-AxQJSX-ixj9TD-rxXJ7N-dbx5bY-e7wHJY-q3NEVp-cMZRas-qvKF9a-jJjVwH-ceXYVo-mCEPiR-Ay6EEz-an7do8-cp2Trh-cUuY8U-peKh18-dbzMtM-9aonmC-fMnp95-qen16s-Z6Nn9j-akPHFV-fFWQTi-ePk38i-q3WK71-fJKzcB-4kngCJ-2eGxWbg-fFWMPc-yEtuqC-27un5jy-nzR4hp-4mcbAK/" title="Animal"><img src="https://live.staticflickr.com/1549/25691458063_8442bff466_z.jpg" width="640" height="427" alt="Animal"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>';
     $("#experiment-area").html(html);
 }
+
+function single_image(){
+    //https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg
+    var html = '<a href="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" target="_blank"><img id="pug-image" src="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" /></a>';
+    html +='<h2>Poochface</h2><p>Link to image</p>';
+
+    html += '<a href="https://www.google.com/search?tbm=isch&sa=1&ei=rU4eXbC7BJCf_QbYhrKQBQ&q=tuna+the+dog&oq=tuna+the+&gs_l=img.1.0.0i67j0l9.5106.7222..8947...1.0..0.88.710.10......0....1..gws-wiz-img.......35i39.nToFHPB_05E" target="_blank"><img id="pug-image" src="https://sadanduseless.b-cdn.net/wp-content/uploads/2018/09/cute-dog-overbite4.jpg" /></a>';
+    html +='<h2>Tuna</h2><p>Link to search engine</p>';
+    $("#experiment-area").html(html);
+}
+
+function stock(){
+    //https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg
+    var html = '<table class="table">';
+    html +='<tr><th class="text-center" colspan="6"><h1>My Tech Stock Picks</h1></th></tr>';
+    html += '<tr class="thead-dark" >';
+//    html += '<thead class="thead-dark">';
+    html += '<th scope="col">NAME</th><th scope="col">SYMBOL</th><th scope="col">CURRENT</th><th scope="col">52WK HI</th><th scope="col">52WK LO</th><th scope="col">P/E RATIO</th>';
+//    html += '</thead>';
+    html += '</tr>';
+    
+    html += '<tbody>';
+    html += '<tr>';
+    html += '<th scope="row">Microsoft</th><td>MSFT</td><td>86-3/8</td><td>119-15/16</td><td>75-1/2</td><td>56.09</td>';
+    html += '</tr><tr>';
+    html += '<th scope="row">Cisco Systems</th><td>CSCO</td><td>72-1/8</td><td>82</td><td>24-13/16</td><td>400.69</td>';
+    html += '</tr><tr>';
+    html += '<th scope="row">America Online</th><td>AOL</td><td>63</td><td>95-13/16</td><td>38-15/32</td><td>350.00</td>';
+    html += '</tr><tr>';
+    html += '<th scope="row">Qwest Communications</th><td>Q</td><td>44-7/16</td><td>66</td><td>25-3/4</td><td>74.06</td>';
+    html += '</tr><tr>';
+    html += '<th scope="row">Dell Computers</th><td>DELL</td><td>53-59/64</td><td>59-11/16</td><td>31-3/8</td><td>86.097</td>';
+    html += '</tr>';
+    html += '</tbody>';
+    html += '<tfoot>';
+    html += '<tr>';
+    html += '<th>summary</th>';
+    html += '</tfoot>';
+    $("#experiment-area").html(html);
+}
